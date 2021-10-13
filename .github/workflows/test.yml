@@ -40,8 +40,6 @@ jobs:
         run: dart analyze
       - name: "Show outdated packages"
         run: flutter pub outdated
-      - name: "Verify that Dart formatting is used, fail if not"
-        run: dart format --output=none --set-exit-if-changed .
       - name: "Test package FlexColorScheme with coverage"
         run: flutter test --coverage
       - name: Upload test coverage to Codecov
